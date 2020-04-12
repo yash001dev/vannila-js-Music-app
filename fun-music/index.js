@@ -1,15 +1,16 @@
-window.addEventListener("load", () => {
-  const sounds = document.querySelectorAll(".sound");
-  const pads = document.querySelectorAll(".pads div");
-  const visual = document.querySelector(".visual");
-  const colors = [
-    "#60d394",
-    "#d36060",
-    "#c060d3",
-    "#d3d160",
-    "#606bd3",
-    "#60c2d3"
-  ];
+
+  $(document).ready(function(){
+    const sound=$(".sound");
+    const pads=$(".pads div");
+    const visual=$(".visual");
+    const colors=[
+    "#511845",
+    "#900c3f",
+    "#c70039",
+    "#ff5733",
+    "#d8345f",
+    "#e58a8a"
+  });
 
   pads.forEach((pad, index) => {
     pad.addEventListener("click", function() {
